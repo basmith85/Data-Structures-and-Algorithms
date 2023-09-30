@@ -99,6 +99,7 @@ class DisjointSet:
         for i in range(len(self.vertex)):
             if self.find(i) == root:
                 count += 1
+        print(count)
         return count
     
 
@@ -125,4 +126,3 @@ if __name__ == '__main__':
   uf = DisjointSet(4)
   uf.joinBlocks(Connected)
   uf.findBlockCount(1)
-  print(uf.findBlockCount(1))
